@@ -292,3 +292,21 @@ if st.button("Recommend"):
     with col5:
         st.text(names[4])
         st.image(posters[4])'''
+
+
+
+
+
+
+For the interview, be ready to explain:
+
+How TF-IDF and cosine similarity work in your Movie Recommender
+What feature engineering you did in Flight Price Prediction
+The difference between Bagging vs Boosting (very common question)
+When to use PCA and Isolation Forest
+
+Since the role is AI Solution Engineer, they may also ask:
+
+How would you deploy an ML model in production?
+How do you handle imbalanced datasets?
+Explain overfitting and how you prevent it

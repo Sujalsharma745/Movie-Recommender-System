@@ -134,7 +134,6 @@ def recommend(movie, n=10):
     return results
 
 st.markdown("#  Movie Recommender System")
-st.markdown("# 🎬 MovieFlix")
 st.markdown("##### *AI-powered movie recommendations based on content similarity*")
 st.divider()
 
@@ -159,7 +158,7 @@ if selected_movie:
     with cb:
         st.markdown(f"### {selected_movie}{' (' + year + ')' if year else ''}")
         if rating:
-            st.markdown(f"⭐ **{rating} / 10**")
+            st.markdown(f" **{rating} / 10**")
         if genres:
             st.markdown("  ".join([f"`{g}`" for g in genres]))
         if overview:
@@ -182,7 +181,7 @@ if clicked:
                 st.image(m["poster"], use_container_width=True)
                 st.markdown(f"<div class='movie-title'>{m['title']}</div>", unsafe_allow_html=True)
                 meta = []
-                if r:  meta.append(f"⭐ {r}")
+                if r:  meta.append(f" {r}")
                 if yr: meta.append(yr)
                 if meta: st.caption("  ·  ".join(meta))
 

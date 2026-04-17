@@ -3,6 +3,7 @@ import pickle
 import requests
 import pandas as pd
 import time
+import gzip
 
 st.set_page_config(
     page_title="CineMatch – Movie Recommender",
@@ -38,7 +39,7 @@ st.markdown("""
 
 @st.cache_resource
 def load_data():
-    movies     = pickle.load(open('movies.pkl', 'rb'))
+    movies= pickle.load(open('movies.pkl', 'rb'))
     similarity = pickle.load(open('similarity.pkl', 'rb'))
     return movies, similarity
 
